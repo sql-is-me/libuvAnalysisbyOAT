@@ -1,0 +1,3 @@
+18:38:14 WARN  - OatPolicyVerifyAnalyser	libuv/	LICENSEFILE	LICENSE	MIT	
+18:38:14 WARN  - OatPolicyVerifyAnalyser	libuv/	OTHERLICENSEFILE	LICENSE-extra	MIT	
+18:38:14 WARN  - OatPolicyVerifyAnalyser	libuv/	OTHERLICENSEFILE	LICENSE-docs	CC-BY-4.0	
