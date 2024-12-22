@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "libuv",
+        "License": "MIT License;CC-BY-4.0 License;MIT License;BSD License;ISC License",
+        "License File": "LICENSE;LICENSE-docs;LICENSE-extra;LICENSE-extra;LICENSE-extra",
+        "Version Number": "1.x",
+        "Owner": "saghul@email.com",
+        "Upstream URL": "https://github.com/libuv/libuv",
+        "Description": "libuv 是一个跨平台的异步 I/O 库。它提供了事件驱动的非阻塞 I/O 操作，支持文件系统、网络和子进程等异步操作，是许多高效服务器和应用程序的基础。"
+    }
+]

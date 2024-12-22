@@ -1,0 +1,21 @@
+
+Invalid File Type Total Count: 0
+
+License Not Compatible Total Count: 0
+
+License Header Invalid Total Count: 0
+
+Copyright Header Invalid Total Count: 0
+
+No License File Total Count: 0
+
+No Readme.OpenSource Total Count: 0
+
+No Readme Total Count: 0
+
+Import Invalid Total Count: 0
+
+Redundant License File Total Count: 0
+
+Third Party Software Info Total Count: 1
+Name:	Third Party Software Info	Content:	swName: libuv;swVersion: 1.x;swLicense: MIT License;CC-BY-4.0 License;MIT License;BSD License;ISC License	Line:	0	Project:	third_party	File:	C:/Users/22445/Desktop/works/libuv/README.OpenSource

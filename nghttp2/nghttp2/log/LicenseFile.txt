@@ -1,0 +1,3 @@
+10:20:55 WARN  - OatPolicyVerifyAnalyser	nghttp2/	LICENSEFILE	LICENSE		See COPYING 
+10:20:55 WARN  - OatPolicyVerifyAnalyser	nghttp2/	OTHERLICENSEFILE	COPYING	MIT	
+10:20:56 WARN  - OatPolicyVerifyAnalyser	nghttp2/	OTHERLICENSEFILE	third-party/llhttp/LICENSE-MIT	MIT	

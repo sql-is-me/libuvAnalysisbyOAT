@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "nghttp2",
+        "License": "The MIT License;GPL-3.0+ License;BSD License;University of Illinois Open Source License",
+        "License File": "LICENSE;COPYING",
+        "Version Number": "1.62.0",
+        "Owner": "tatsuhiro-t@email.com",
+        "Upstream URL": "https://github.com/nghttp2/nghttp2",
+        "Description": "nghttp2 是一个开源的实现了 HTTP/2 协议的库和工具集。它支持 HTTP/2 客户端、服务器和代理功能，并提供了与 HTTP/2 相关的各种功能，包括请求/响应处理、流控制、头部压缩、优先级控制等。"
+    }
+]

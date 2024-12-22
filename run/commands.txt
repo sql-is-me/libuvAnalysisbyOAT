@@ -1,0 +1,2 @@
+java -jar ohos_ossaudittool-2.0.0.jar  -mode s -s C:\Users\22445\Desktop\works\libuv -r C:\Users\22445\Desktop\works\report -n third_party
+java -jar ohos_ossaudittool-2.0.0.jar  -mode s -s C:\Users\22445\Desktop\works\nghttp2\nghttp2 -r C:\Users\22445\Desktop\works\report -n third_party

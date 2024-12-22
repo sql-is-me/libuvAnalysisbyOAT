@@ -1,0 +1,1 @@
+15:43:05 WARN  - OatFileAnalyser	third_party	README.OpenSource	MIT License;CC-BY-4.0 License;MIT License;BSD License;ISC License

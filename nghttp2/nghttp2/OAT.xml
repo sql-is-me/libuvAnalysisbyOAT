@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (c) 2021 Huawei Device Co., Ltd.
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+
+    This is the configuration file template for OpenHarmony OSS Audit Tool, please copy it to your project root dir and modify it refer to OpenHarmony/tools_oat/README.
+
+-->
+
+<configuration>
+    <oatconfig>
+        <licensefile></licensefile>
+        <policylist>
+            <policy name="projectPolicy" desc="">
+                <policyitem type="compatibility" name="GPL-3.0+" path="m4/ax_check_compile_flag.m4" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="Scripts don't have to follow GPL-3.0+"/>
+                <policyitem type="compatibility" name="University of Illinois Open Source License" path="git-clang-format" rule="may" group="defaultGroup" filefilter="defaultPolicyFilter" desc="UIUC license"/>
+                <!-- <policyitem type="filetype" name="*" path=".*" rule="may" group="defaultGroup" filefilter="defaultFilter" desc=""/>
+                <policyitem type="license" name="*" path=".*" rule="may" group="defaultGroup" filefilter="licenseFileNamePolicyFilter" desc=""/> -->
+                <!--policyitem type="compatibility" name="GPL-2.0+" path="abc/.*" desc="Process that runs independently, invoked by the X process."/-->
+                <!--policyitem type="license" name="LGPL" path="abc/.*" desc="Dynamically linked by module X"/-->
+                <!--policyitem type="copyright" name="xxx" path="abc/.*" rule="may" group="defaultGroup" filefilter="copyrightPolicyFilter" desc="Developed by X Company"/-->
+            </policy>
+        </policylist>
+        <filefilterlist>
+            <filefilter name="defaultFilter" desc="Files not to check">
+                <filteritem type="filename" name="*.iml|*.json|*.txt" desc="desc files"/>
+                <filteritem type="filepath" name="target/.*" desc="Compile output files"/>
+                <filteritem type="filepath" name="out/.*" desc="Compile output files"/>
+                <filteritem type="filepath" name="log/.*" desc="log files"/>
+                <filteritem type="filepath" name=".idea/.*|.github/.*|.vscode/.*" desc="Tools temp files"/>
+                <filteritem type="filepath" name="projectroot/[a-zA-Z0-9]{20,}.sh" desc="Temp files"/>
+                <filteritem type="filepath" name="src/test/.*" desc="Test files"/>
+            </filefilter>
+            <filefilter name="defaultPolicyFilter" desc="Filters for compatibility，license header policies">
+                <filteritem type="filename" name="CONTRIBUTION" desc="this file was used to describe how to contribute"/>
+                <filteritem type="filename" name="contribute.rst" desc="this file was used to describe how to contribute"/>
+                <!--filteritem type="filename" name="*.uvwxyz" desc="Describe the reason for filtering scan results"/-->
+                <!--filteritem type="filepath" name="abcdefg/.*.uvwxyz" desc="Describe the reason for filtering scan results"/-->
+                <!--filteritem type="filepath" name="projectroot/[a-zA-Z0-9]{20,}.sh" desc="Temp files"/-->
+            </filefilter>
+            <filefilter name="copyrightPolicyFilter" desc="Filters for copyright header policies">
+                <!--filteritem type="filename" name="*.uvwxyz" desc="Describe the reason for filtering scan results"/-->
+                <!--filteritem type="filepath" name="abcdefg/.*.uvwxyz" desc="Describe the reason for filtering scan results"/-->
+                <!--filteritem type="filepath" name="projectroot/[a-zA-Z0-9]{20,}.sh" desc="Temp files"/-->
+            </filefilter>
+            <filefilter name="licenseFileNamePolicyFilter" desc="Filters for LICENSE file policies">
+                <!--filteritem type="filename" name="*.uvwxyz" desc="Describe the reason for filtering scan results"/-->
+                <!--filteritem type="filepath" name="abcdefg/.*.uvwxyz" desc="Describe the reason for filtering scan results"/-->
+                <!--filteritem type="filepath" name="projectroot/[a-zA-Z0-9]{20,}.sh" desc="Temp files"/-->
+            </filefilter>
+            <filefilter name="readmeFileNamePolicyFilter" desc="Filters for README file policies">
+                <!--filteritem type="filename" name="*.uvwxyz" desc="Describe the reason for filtering scan results"/-->
+                <!--filteritem type="filepath" name="abcdefg/.*.uvwxyz" desc="Describe the reason for filtering scan results"/-->
+                <!--filteritem type="filepath" name="projectroot/[a-zA-Z0-9]{20,}.sh" desc="Temp files"/-->
+            </filefilter>
+            <filefilter name="readmeOpenSourcefileNamePolicyFilter" desc="Filters for README.OpenSource file policies">
+                <!--filteritem type="filename" name="*.uvwxyz" desc="Describe the reason for filtering scan results"/-->
+                <!--filteritem type="filepath" name="abcdefg/.*.uvwxyz" desc="Describe the reason for filtering scan results"/-->
+                <!--filteritem type="filepath" name="projectroot/[a-zA-Z0-9]{20,}.sh" desc="Temp files"/-->
+            </filefilter>
+            <filefilter name="binaryFileTypePolicyFilter" desc="Filters for binary file policies">
+                <filteritem type="filename" name="*.png|*.jpg|*.ico" desc="desc files"/>
+                <filteritem type="filename" name="*.pem" desc="pem file"/>
+                <filteritem type="filepath" name="fuzz/corpus/.*" desc="binaryFile can't read"/>
+                <!--filteritem type="filename" name="*.uvwxyz" desc="Describe the reason for filtering scan results"/-->
+                <!--filteritem type="filepath" name="abcdefg/.*.uvwxyz" desc="Describe the reason for filtering scan results"/-->
+                <!--filteritem type="filepath" name="projectroot/[a-zA-Z0-9]{20,}.sh" desc="Temp files"/-->
+            </filefilter>
+
+        </filefilterlist>
+        <licensematcherlist>
+            <licensematcher name="MIT License" desc="License for configure.ac" >
+                <licensetext name="
+                dnl nghttp2 - HTTP/2 C Library
+
+                dnl Copyright (c) 2012, 2013, 2014, 2015 Tatsuhiro Tsujikawa
+
+                dnl Permission is hereby granted, free of charge, to any person obtaining
+                dnl a copy of this software and associated documentation files (the
+                dnl &quot;Software&quot;), to deal in the Software without restriction, including
+                dnl without limitation the rights to use, copy, modify, merge, publish,
+                dnl distribute, sublicense, and/or sell copies of the Software, and to
+                dnl permit persons to whom the Software is furnished to do so, subject to
+                dnl the following conditions:
+
+                dnl The above copyright notice and this permission notice shall be
+                dnl included in all copies or substantial portions of the Software.
+
+                dnl THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+                dnl EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+                dnl MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+                dnl NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+                dnl LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+                dnl OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+                dnl WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+                dnl Do not change user variables!
+                dnl https://www.gnu.org/software/automake/manual/html_node/Flag-Variables-Ordering.html
+                " desc=""/>
+            </licensematcher>
+            <licensematcher name="2-Clause BSD License" desc="License for rubydomain.py" >
+                <licensetext name="
+                # -*- coding: utf-8 -*-
+                &quot;&quot;&quot;
+                    sphinx.domains.ruby
+                    ~~~~~~~~~~~~~~~~~~~
+
+                    The Ruby domain.
+
+                    :copyright: Copyright 2010 by SHIBUKAWA Yoshiki
+                    :license: BSD, see LICENSE for details.
+                &quot;&quot;&quot;
+                " desc=""/>
+            </licensematcher>
+            <licensematcher name="University of Illinois Open Source License" desc="License for git-clang-format" >
+                <licensetext name="
+                #!/usr/bin/env python
+                #
+                #===- git-clang-format - ClangFormat Git Integration ---------*- python -*--===#
+                #
+                #                     The LLVM Compiler Infrastructure
+                #
+                # This file is distributed under the University of Illinois Open Source
+                # License. See LICENSE.TXT for details.
+                #
+                #===------------------------------------------------------------------------===#        
+                " desc=""/>
+            </licensematcher>
+        </licensematcherlist>
+    </oatconfig>
+</configuration>
